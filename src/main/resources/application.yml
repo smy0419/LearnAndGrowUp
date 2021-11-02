@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: LearnAndGrowUp
+  rabbitmq:
+    host: 192.168.213.131
+    port: 5672
+    username: rabbit
+    password: rabbit
+    virtual-host: /
+    # 手动提交消息
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
+
+
